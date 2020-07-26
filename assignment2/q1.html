@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Registration form
+  </title>
+  <style>
+    body {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid green;
+      padding: 10px;
+      margin: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body><form>
+  <h1 style="color: brown;">Registration page</h1>
+  First Name:<input type="text" id="fn" placeholder="Enter First Name" /><br />
+  Last Name:<input type="text" id="sn" placeholder="Enter Last Name" /><br />
+  Date Of Birth:<input type="date" id="dob" placeholder="enter dob" /><br />
+  mobile number:<input
+    type="number"
+    id="num"
+    placeholder="enter phone number"
+  /><br />
+  Email id:<input type="email" id="em" placeholder="Enter your E-mail"/><br />
+  address:<textarea rows="10" cols="20" placeholder="enter address"></textarea
+  ><br />
+  Gender:<br/>
+  <input type="radio" id="male" name="gender" value="male" />
+  <label for="male">Male</label><br />
+  <input type="radio" id="female" name="gender" value="female" />
+  <label for="female">Female</label><br />
+  <input type="radio" id="other" name="gender" value="other" />
+  <label for="other">Other</label><br/>
+  Department:<br/>
+  <input type="radio" id="cse" name="dept" value="cse" />
+  <label for="cse">CSE</label><br />
+  <input type="radio" id="ece" name="dept" value="ece" />
+  <label for="ece">ECE</label><br />
+  <input type="radio" id="mech" name="dept" value="mech" />
+  <label for="mech">MECH</label><br/>
+<input type="submit" />
+  <input type="reset" value="Clear" /></form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Phone number validation
+  </title>
+  <script>
+    function check() {
+      var reg = /^[6-9][0-9]{9}$/;
+      var num = document.getElementById("ph").value;
+      if (reg.test(num)) {
+        alert("validated");
+      } else {
+        alert("not validated");
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="tel" id="ph" placeholder="enter number" />
+  <button ="button" onclick="check()">submit</button>
+</body>

@@ -1,0 +1,19 @@
+body {
+  background-color: aquamarine;
+}
+h1 {
+  color: blue;
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  color: red;
+  font-variant: initial;
+  text-decoration-color: brown;
+}
+h3 {
+  text-transform: uppercase;
+  font-stretch: semi-expanded;
+}

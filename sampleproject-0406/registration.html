@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Registration
+  </title>
+  <link rel="shortcut icon" href="gitam.jpg" />
+  <link href="registration.css" rel="StyleSheet" />
+  <script src="registration.js"></script>
+</head>
+<body>
+  <div class="i1">
+    <img src="gitam.jpg" width="122px" height="128px" />
+  </div>
+  <div class="i2">
+    <img src="naac-logo.png" width="122px" height="120px" />
+  </div>
+  <div class="a1">
+    <ul class="u1" type="none">
+      <li>GITAM University</li>
+      <li>TandP Cell</li>
+    </ul>
+  </div>
+  <ul class="u2">
+    <a href="homepage.html" target="_blank"><li>Home</li></a>
+    <a href="aboutus.html" target="_blank"><li>about us</li></a>
+    <a href="contact.html" target="_blank"><li>contact us</li></a>
+    <a href="login.html" target="_blank"><li>login</li></a>
+    <a href="feedback.html" target="_blank"><li>Feedback</li></a>
+    <a href="registration.html" target="_blank"><li>Registration</li></a>
+  </ul>
+  <h1>Registration page</h1>
+  <form method="post" target="#" onsubmit="return validate()" id="f1">
+    <p>
+      Register for Gitam account so that you can access the features of tandp
+      page
+    </p>
+    Name<br />
+    <input type="text" name="name" id="us" /><br />
+    Id<br />
+    <input type="number" id="idd" /><br />
+    Date Of Birth<br />
+    <input type="text" id="dt" /><br />
+    <h6>write in a format of DD/MM/YYYY</h6>
+    Year Of Joining<br />
+    <input type="number" id="jd" /><br />
+    Year of Passing out<br />
+    <input type="number" id="pd" /><br />
+    Branch<br />
+    <select>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>MECH</option>
+      <option>EEE</option>
+      <option>CIVIL</option> </select
+    ><br />
+    Mobile Number:<br />
+    <input type="number" id="ph" /><br />
+    Email<br />
+    <input type="text" name="email" id="em" /><br />
+    Retype email<br />
+    <input type="text" name="retype_email" id="rem" /><br />
+    Create a password<br />
+    <input type="password" name="password" id="ps" /><br />
+    Retype password<br />
+    <input type="password" name="retype_password" id="rps" /><br />
+    <label>
+      <input type="checkbox" name="terms" id="cb" />By clicking on to this you
+      agree to our <a href="#service">Terms of Service</a> and
+      <a href="#policy">Privacy Policy</a>
+    </label>
+    <div class="button">
+      <input type="submit" class="button" value="Set Up Account" />
+      <input type="button" onclick="myFunction()" value="clear" />
+    </div>
+  </form>
+</body>

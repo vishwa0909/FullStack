@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Registation page Using Bootstrap
+  </title>
+
+  <link href="bootstrap.min.css" rel="StyleSheet" />
+</head>
+<body>
+  <style>
+    body {
+      background: linear-gradient(
+        90deg,
+        #ce5937 00%,
+        #1c6ea4 50%,
+        #c59237 100%
+      );
+    }
+    .container-fluid {
+      width: 480px;
+      margin: auto;
+      padding: 5px;
+      border: solid black 1px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 2px #888;
+      font-weight: bolder;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <h1>Registration Form</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        Name<br />
+        <input type="text" name="name" id="us" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        ID:<br />
+        <input type="number" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        DOB:<br />
+        <input type="date" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        Email:<br />
+        <input type="email" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        Password<br />
+        <input type="password" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        Branch<br />
+        <select>
+          <option>CSE</option>
+          <option>ECE</option>
+          <option>MECH</option>
+          <option>EEE</option>
+          <option>CIVIL</option> </select
+        ><br />
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn">Sign up</button>
+      </div>
+    </div>
+  </div>
+</body>

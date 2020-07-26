@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>Password</title>
+  <script>
+    function myfun() {
+      var inp = document.getElementById("ps").value;
+      var reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,12}$/;
+
+      if (reg.test(inp)) {
+        document.getElementById("ou").innerHTML = "Validated";
+      } else {
+        document.getElementById("ou").innerHTML = "NOT Validated";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Password Validation</h1>
+  <input type="text" id="ps" placeholder="enter Password" />
+  <button type="button" onclick="myfun()">Validate</button>
+  <div id="ou"></div>
+</body>

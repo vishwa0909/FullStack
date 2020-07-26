@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <script
+      type="text/javascript"
+      src="bootstrap-4.5.0-dist/js/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="bootstrap-4.5.0-dist/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#btnClick").click(function () {
+          var us = $("txtUsername").val();
+          var em = $("#txtEmail").val();
+          var mob = $("#txtMobile").val();
+          var pass = $("#txtPassword").val();
+          var ur = /^[a-z]{6,12}$/;
+          var er = /^[a-zA-Z0-9._-]{6,12}[@][a-z]{3,15}[.][a-z]{2,6}$/;
+          var mr = /^[6-9][0-9]{9}$|^[0][6-9][0-9]{9}$|^[+][9][1][6-9][0-9]{9}$/;
+          var pr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{5,12}$/;
+          if (ur.test(us) && er.test(em) && mr.test(mob) && pr.test(pass)) {
+            window.alert("validated");
+          } else {
+            window.alert(
+              "Enter correct Password or Email-Id or Mobile No or name."
+            );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="card">
+        <div class="card-header">
+          <h3>Registration Form</h3>
+        </div>
+        <div class="card-body">
+          <form id="validateLogin">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="txtUsername"
+                class="form-control"
+                name="username"
+                placeholder="Enter Username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email-Id</label>
+              <input
+                type="text"
+                id="txtEmail"
+                class="form-control"
+                name="email"
+                placeholder="Enter Email-Id"
+              />
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile No.</label>
+              <input
+                type="text"
+                id="txtMobile"
+                class="form-control"
+                name="mobile"
+                placeholder="Enter Mobile Number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="txtPassword"
+                class="form-control"
+                name="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="adress">Address</label>
+              <textarea
+                name="address"
+                id="txtAddress"
+                cols="30"
+                rows="3"
+                placeholder="Enter Address"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="btnClick" class="btn btn-primary">
+                Sign In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

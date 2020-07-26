@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    login
+  </title>
+  <link rel="shortcut icon" href="gitam.jpg" />
+  <link href="login.css" rel="StyleSheet" />
+  <script src="login.js"></script>
+</head>
+<body>
+  <div class="i1">
+    <img src="gitam.jpg" width="122px" height="128px" />
+  </div>
+  <div class="i2">
+    <img src="naac-logo.png" width="122px" height="120px" />
+  </div>
+  <div class="a1">
+    <ul class="u1" type="none">
+      <li>GITAM University</li>
+      <li>TandP Cell</li>
+    </ul>
+  </div>
+  <ul class="u2">
+    <a href="homepage.html" target="_blank"><li>Home</li></a>
+    <a href="aboutus.html" target="_blank"><li>about us</li></a>
+    <a href="contact.html" target="_blank"><li>contact us</li></a>
+    <a href="login.html" target="_blank"><li>login</li></a>
+    <a href="feedback.html" target="_blank"><li>Feedback</li></a>
+    <a href="registration.html" target="_blank"><li>Registration</li></a>
+  </ul>
+  <h1>Login</h1>
+  <form
+    method="GET"
+    action="loginpage.html"
+    onsubmit="return validate()"
+    id="f1"
+  >
+    <div>
+      Enter your email:<br />
+      <input type="textbox" id="em" placeholder="enter email" /><br />
+      Enter your Password:<br />
+      <input type="password" id="ps" placeholder="enter password" /><br />
+      <input type="submit" value="login" class="button" />
+      <input type="button" onclick="myFunction()" value="clear" />
+      <div id="o"></div>
+    </div>
+  </form>
+</body>

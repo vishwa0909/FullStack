@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    Feedback
+  </title>
+  <link rel="shortcut icon" href="gitam.jpg" />
+  <link href="feedback.css" rel="StyleSheet" />
+  <script src="feedback.js"></script>
+</head>
+<body>
+  <div class="i1">
+    <img src="gitam.jpg" width="122px" height="128px" />
+  </div>
+  <div class="i2">
+    <img src="naac-logo.png" width="122px" height="120px" />
+  </div>
+  <div class="a1">
+    <ul class="u1" type="none">
+      <li>GITAM University</li>
+      <li>TandP Cell</li>
+    </ul>
+  </div>
+  <ul class="u2">
+    <a href="homepage.html" target="_blank"><li>Home</li></a>
+    <a href="aboutus.html" target="_blank"><li>about us</li></a>
+    <a href="contact.html" target="_blank"><li>contact us</li></a>
+    <a href="login.html" target="_blank"><li>login</li></a>
+    <a href="feedback.html" target="_blank"><li>Feedback</li></a>
+    <a href="registration.html" target="_blank"><li>Registration</li></a>
+  </ul>
+  <h1>FeedBack Form</h1>
+  <p style="text-align: center;">
+    Prior to Writing your feedback, Please enter your Details
+  </p>
+  <br /><br />
+  <form method="GET" action="feed.html" onsubmit="return myfun()" id="f1">
+    Name:<input type="text" id="us" /><br /><br />
+    Emailid:<input type="text" id="em" /><br /><br />
+    Rollno:<input type="number" id="idd" /><br /><br />
+    <div class="button">
+      <input type="submit" value="submit" class="button" />
+      <input type="button" onclick="myFunction()" value="clear" /><br />
+      <p>After Clicking submit you will redirected to Feedback page</p>
+    </div>
+  </form>
+</body>

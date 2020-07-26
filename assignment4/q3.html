@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    emailid validation
+  </title>
+  <script>
+    function check() {
+      var reg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+      var ema = document.getElementById("em").value;
+      if (reg.test(ema)) {
+        alert("validated");
+      } else {
+        alert("not validated");
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="em" placeholder="enter email id" />
+  <button type="button" onclick="check()">submit</button>
+</body>
+</html>
